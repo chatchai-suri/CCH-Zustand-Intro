@@ -16,10 +16,10 @@ function App() {
       {/* <Level1 user={user} /> */}
       {/* <button onClick={increment} className="btn">เพิ่ม</button> */}
       {/* <button onClick={()=>setuser({name: "Ada"})} className="btn">set user</button> */}
-      {/* <ThemeSwitcher /> */}
-      <CounterDisplay />
-      <ButtonPanel />
-      <HistoryLog />
+      <ThemeSwitcher />
+      {/* <CounterDisplay /> */}
+      {/* <ButtonPanel /> */}
+      {/* <HistoryLog /> */}
     </div>
   );
 }
