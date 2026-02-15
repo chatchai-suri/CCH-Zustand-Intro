@@ -4,6 +4,7 @@ import { useCounterStore } from "./stores/useCounterStore";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import CounterDisplay from "./components/CounterDisplay";
 import ButtonPanel from "./components/ButtonPanel";
+import HistoryLog from "./components/HistoryLog";
 
 function App() {
   const [user, setuser] = useState({ name: "John" });
@@ -18,6 +19,7 @@ function App() {
       {/* <ThemeSwitcher /> */}
       <CounterDisplay />
       <ButtonPanel />
+      <HistoryLog />
     </div>
   );
 }
