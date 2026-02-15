@@ -1,14 +1,25 @@
-
+import { useState } from "react";
+import Level1 from "./components/Level1";
+import { useCounterStore } from "./stores/useCounterStore";
+import ThemeSwitcher from "./components/ThemeSwitcher";
+import CounterDisplay from "./components/CounterDisplay";
+import ButtonPanel from "./components/ButtonPanel";
 
 function App() {
-  
+  const [user, setuser] = useState({ name: "John" });
+  // const count = useCounterStore((state)=>state.count)
+  // const increment = useCounterStore((state)=>state.increment)
 
   return (
-    <div className="app">
-     <h1 className="text-3xl text-amber-300">Hello, Papoo!</h1>
-     <button className="btn btn-primary">Click Me</button>
+    <div className="min-h-screen bg-gray-100 p-6 rounded-lg flex flex-col items-center">
+      {/* <Level1 user={user} /> */}
+      {/* <button onClick={increment} className="btn">เพิ่ม</button> */}
+      {/* <button onClick={()=>setuser({name: "Ada"})} className="btn">set user</button> */}
+      {/* <ThemeSwitcher /> */}
+      <CounterDisplay />
+      <ButtonPanel />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
