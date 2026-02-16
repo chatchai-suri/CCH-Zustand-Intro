@@ -1,8 +1,11 @@
 import { useThemeStore } from "../stores/useThemeStore"
+import { useThemeStore_2 } from "../stores/useThemeStore_2"
 
 function ThemeSwitcher() {
-  const theme = useThemeStore((state)=>state.theme)
-  const toggleTheme = useThemeStore((state)=>state.toggleTheme)
+  // const theme = useThemeStore((state)=>state.theme)
+  // const toggleTheme = useThemeStore((state)=>state.toggleTheme)
+  const theme = useThemeStore_2((state)=>state.theme)
+  const toggleTheme = useThemeStore_2((state)=>state.toggleTheme)
   return (
     <div className={`
       max-w-xl w-full rounded-lg shadow-xl p-6
