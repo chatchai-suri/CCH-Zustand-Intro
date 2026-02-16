@@ -17,9 +17,9 @@ function App() {
       {/* <button onClick={increment} className="btn">เพิ่ม</button> */}
       {/* <button onClick={()=>setuser({name: "Ada"})} className="btn">set user</button> */}
       <ThemeSwitcher />
-      {/* <CounterDisplay /> */}
-      {/* <ButtonPanel /> */}
-      {/* <HistoryLog /> */}
+      <CounterDisplay />
+      <ButtonPanel />
+      <HistoryLog />
     </div>
   );
 }
